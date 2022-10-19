@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  mc:
+    build:
+      context: docker/.
+      dockerfile: minecraft.Dockerfile
+    volumes:
+     - ./data:/data
+    ports:
+     - "25565"
