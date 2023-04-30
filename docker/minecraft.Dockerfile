@@ -5,7 +5,7 @@ RUN apt-get update && \
 	apt-get install -y --no-install-recommends \
 	curl openjdk-18-jdk git
 
-ENV MC_VERSION 1.19.2
+ENV MC_VERSION 1.19.4
 
 RUN curl -O https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
 RUN java -jar BuildTools.jar --rev $MC_VERSION
