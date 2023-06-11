@@ -7,5 +7,6 @@ services:
       dockerfile: minecraft.Dockerfile
     volumes:
      - ./data:/data
+     - ./world:/world
     ports:
      - "25565"
